@@ -1,5 +1,5 @@
 *{
-    font-family: 'Helvetica';
+    font-family: 'Verdana';
     margin: 0;
     padding: 0;
 }
@@ -141,6 +141,8 @@ html{
     margin: auto 20px;
     background: gray;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 5px 5px, rgb(0 0 0 / 19%) 0px 3px 5px 0px;
+    background-image: url(Imagenes/madera.jpg);
+    background-size: contain;
 }
 
 .container{
@@ -161,6 +163,8 @@ html{
     margin: 20px auto;
     pointer-events: none;
     box-shadow: rgb(0 0 0 / 20%) 0px 2px 5px 5px, rgb(0 0 0 / 19%) 0px 3px 5px 0px;
+    background-image: url(Imagenes/madera.jpg);
+    background-size: contain;
     /* animation: caida 750ms forwards; */
 }
 
@@ -256,4 +260,24 @@ html{
 .titulo{
     font-family: The Last Shuriken Font;
     src: url("Fuente/ThelastshurikenRegular-JRdnB.otf") format("opentype");
+}
+
+.menuInicio{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: fit-content;
+    /* height: 50px; */
+    border-radius: 5%;
+    border: none;
+    background-image: radial-gradient( farthest-corner at 0px 0px, #850432 36%, #250e56 91% );
+    color: white;
+    font-size: 16px;
+    text-shadow: 3px 3px 5px black;
+    /* transition: all 500ms; */
+    padding: 20px;
+}
+
+.menuInicio:hover{
+    cursor: pointer;
 }
