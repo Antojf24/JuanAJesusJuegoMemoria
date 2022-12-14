@@ -1,2 +1,0 @@
-# JuanAJesusJuegoMemoria
-El juego consistirá en un camino de plataformas y tu objetivo será llegar al final, si no eliges la plataforma correcta perderás una oportunidad y volveras a empezar desde el principio y será cosa del jugador acordarse del camino ya recorrido anteriormente para llegar al final. Si pierdes todas las oportunidades perderás y volverás al menú de dificultad.
