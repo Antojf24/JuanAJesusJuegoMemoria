@@ -1,0 +1,283 @@
+*{
+    font-family: 'Verdana';
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: Karasha Font;   
+    src: url("Fuente/Karasha-z8mYw.otf") format("opentype");
+
+    font-family: The Last Shuriken Font;
+    src: url("Fuente/ThelastshurikenRegular-JRdnB.otf") format("opentype");
+}
+
+html{
+    background-image: url(Imagenes/4255782.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.contenedor{
+    /* background-color: #6a002e; */
+    background: url(Imagenes/4255782.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: block;
+    /* display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 300px; */
+}
+
+.titulo{
+    position: relative;
+    width: fit-content;
+    width: fit-content;
+    top: 50px;
+    margin:auto auto 100px auto;
+    color: white;
+}
+
+.titulo h1{
+    font-family: 'The Last Shuriken Font';
+}
+
+.empezar,.botonesDiv button{
+    display: block;
+    margin: 200px auto auto auto;
+    width: fit-content;
+    /* height: 50px; */
+    border-radius: 5%;
+    border: none;
+    background-image: radial-gradient( farthest-corner at 0px 0px, #850432 36%, #250e56 91% );
+    color: white;
+    font-size: 16px;
+    text-shadow: 3px 3px 5px black;
+    /* transition: all 500ms; */
+    padding: 20px;
+}
+
+.empezar:hover,.botonesDiv button:hover{
+    cursor: pointer;
+}
+
+.empezar:active{
+    position: relative;
+    top: 5px;
+}
+
+.personajeMenuPpal{
+    display: block;
+    width: 125px;
+    height: 237px;
+    margin: auto auto auto auto;
+    background-image: url(Imagenes/Idle__000.png);
+    background-size: cover;
+    animation: animacionDePie 750ms infinite;
+}
+
+.personajeMenuPpal img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.explicacion{
+    display: flex;
+    margin: auto;
+    width: fit-content;
+}
+
+.personajeExplicacion{
+    display: block;
+    width: 250px;
+    height: 260px;
+    margin: auto 0 auto auto;
+    background-image: url(Imagenes/Glide_000.png);
+    background-size: cover;
+    animation: animacionExplicacion 750ms infinite;
+}
+
+.descripcionJuego{
+    width: 40%;
+    background: white;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.descripcionJuego p{
+    text-align: center;
+    line-height: 30px;
+}
+
+
+.botonesDiv{
+    display: flex;
+    width: fit-content;
+    margin: 150px auto;
+}
+
+.botonesDiv button{
+    margin: auto 10px;
+    padding: 10px 20px;
+}
+
+
+.containerPadre{
+    display: flex;
+    width: fit-content;
+    margin: 30vh auto auto 0;
+}
+
+.plataformaInicial{
+    width: 150px;
+    height: 250px;
+    margin: auto 20px;
+    background: gray;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 5px 5px, rgb(0 0 0 / 19%) 0px 3px 5px 0px;
+    background-image: url(Imagenes/madera.jpg);
+    background-size: contain;
+}
+
+.container{
+    display: flex;
+    width: fit-content;
+}
+
+.columna{
+    display: block;
+    width: fit-content;
+    margin: 20px;
+}
+
+.cuadrado,.cuadradoNulo{
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    margin: 20px auto;
+    pointer-events: none;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 5px 5px, rgb(0 0 0 / 19%) 0px 3px 5px 0px;
+    background-image: url(Imagenes/madera.jpg);
+    background-size: contain;
+    /* animation: caida 750ms forwards; */
+}
+
+@-webkit-keyframes caida {
+    0% { transform: translateY(0); }
+    100% { 
+        transform: translateY(800%); 
+        display: none;
+}
+}
+
+@-webkit-keyframes animacionDePie {
+    10% {background-image: url(Imagenes/Idle__000.png); }
+    20% {background-image: url(Imagenes/Idle__001.png); }
+    30% {background-image: url(Imagenes/Idle__002.png); }
+    40% {background-image: url(Imagenes/Idle__003.png); }
+    50% {background-image: url(Imagenes/Idle__004.png); }
+    60% {background-image: url(Imagenes/Idle__005.png); }
+    70% {background-image: url(Imagenes/Idle__006.png); }
+    80% {background-image: url(Imagenes/Idle__007.png); }
+    90% {background-image: url(Imagenes/Idle__008.png); }
+    100% {background-image: url(Imagenes/Idle__009.png); }
+}
+
+@-webkit-keyframes animacionExplicacion {
+    10% {background-image: url(Imagenes/Glide_000.png); }
+    20% {background-image: url(Imagenes/Glide_001.png); }
+    30% {background-image: url(Imagenes/Glide_002.png); }
+    40% {background-image: url(Imagenes/Glide_003.png); }
+    50% {background-image: url(Imagenes/Glide_004.png); }
+    60% {background-image: url(Imagenes/Glide_005.png); }
+    70% {background-image: url(Imagenes/Glide_006.png); }
+    80% {background-image: url(Imagenes/Glide_007.png); }
+    90% {background-image: url(Imagenes/Glide_008.png); }
+    100% {background-image: url(Imagenes/Glide_009.png); }
+}
+
+.personaje{
+    position: absolute;
+    width: 50px;
+    height: auto;
+    margin: -220px auto auto 100px;
+    transition: 500ms ease-in-out;
+}
+
+.personaje img{
+    width: 100%;
+    height: auto;
+}
+
+.fin{
+    width: fit-content;
+    margin: 300px auto auto auto;
+    border-radius: 10px;
+    border: 1px solid white;
+    padding: 20px;
+    background: #6a002e;
+}
+
+.fin button{
+    border: none;
+    background: cadetblue;
+    color: white;
+    font-size: larger;
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+}
+
+.fin button:hover{
+    cursor: pointer;
+}
+
+.fin h1{
+    width: fit-content;
+    margin: auto;
+    color: white;
+}
+
+.intentos{
+    position: absolute;
+    top: 0%;
+    left: 80%;
+    color: #690169;
+    font-weight: bolder;
+    font-size: larger;
+    padding: 20px;
+    font-family: The Last Shuriken Font;
+    background: white;
+    box-shadow: rgb(0 0 0 / 20%) 0px 2px 5px 5px, rgb(0 0 0 / 19%) 0px 3px 5px 0px;
+}
+
+.titulo{
+    font-family: The Last Shuriken Font;
+    src: url("Fuente/ThelastshurikenRegular-JRdnB.otf") format("opentype");
+}
+
+.menuInicio{
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    width: fit-content;
+    /* height: 50px; */
+    border-radius: 5%;
+    border: none;
+    background-image: radial-gradient( farthest-corner at 0px 0px, #850432 36%, #250e56 91% );
+    color: white;
+    font-size: 16px;
+    text-shadow: 3px 3px 5px black;
+    /* transition: all 500ms; */
+    padding: 20px;
+}
+
+.menuInicio:hover{
+    cursor: pointer;
+}
